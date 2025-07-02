@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Zeyu Gao Homepage</title>
-	<style>
-		body {
-			font-family: sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			text-align: center;
-		}
-		.profile-photo {
-			border-radius: 50%;
-			margin-bottom: 20px;
-		}
-		.intro {
-			font-size: 18px;
-			color: #666;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quant Trading Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background-color: #0b0e16;
+    }
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(135deg, #001d3d, #003566, #001d3d);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 0.1em;
+    }
+    h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #7dd3fc;
+      margin-top: 10px;
+    }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .ticker {
+      font-size: 2em;
+      margin-top: 40px;
+      color: #7dd3fc;
+    }
+    .disclaimer {
+      color: #aaa;
+      font-size: 0.8em;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<h1>WELCOME</h1>
-		<div class="intro">
-			<p>Hi, my name is <strong>Zeyu (Billy) Gao</strong>.<br><br>I am currently working in quantitative R&D, trading and portfolio management in Sydney.</strong><br><br>Please visit my </a><a href="https://www.linkedin.com/in/zeyugao/">LinkedIn</a> page for more info.</p>
-		</div>
-	</div>
+  <header class="hero">
+    <h1>Quant Trading Lab</h1>
+    <h2>Where algorithms meet the market</h2>
+    <div id="ticker" class="ticker">0.00</div>
+  </header>
+  <section class="content">
+    <p>Welcome to the future of quantitative trading. This demo site showcases a sleek and modern look for algorithmic finance projects.</p>
+    <p>Connect with the team on <a href="https://www.linkedin.com/in/zeyugao/" style="color:#7dd3fc">LinkedIn</a>.</p>
+    <p class="disclaimer">Information presented here is for educational purposes only and does not constitute financial advice.</p>
+  </section>
+  <script>
+    function updateTicker() {
+      const el = document.getElementById('ticker');
+      const value = (Math.random() * 10000).toFixed(2);
+      el.textContent = value;
+    }
+    updateTicker();
+    setInterval(updateTicker, 1000);
+  </script>
 </body>
 </html>
