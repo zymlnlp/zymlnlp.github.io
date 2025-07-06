@@ -1,5 +1,4 @@
-# Quant Trading Lab Demo
+# Zeyu Gao - Personal Blog
+A minimalist black-and-white blog showcasing thoughts on finance, technology, and personal growth.
 
-A tiny demo site with a futuristic theme for showcasing quantitative trading projects.
-
-Open `index.html` in your browser to see the effect.
+Open `index.html` in a browser to see the site.
