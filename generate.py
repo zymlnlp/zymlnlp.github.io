@@ -18,7 +18,7 @@ for filename in os.listdir(POSTS_DIR):
     path = os.path.join(POSTS_DIR, filename)
     with open(path, 'r', encoding='utf-8') as f:
         md_text = f.read()
-    html = markdown.markdown(md_text)
+    html = markdown.markdown(md_text, extensions=["extra"])
     title = 'Untitled'
     for line in md_text.splitlines():
         if line.startswith('# '):

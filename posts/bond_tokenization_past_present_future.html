@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bond Tokenization: Past, Present & Future—A Quant's Perspective</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
@@ -44,14 +44,39 @@
 <li><strong>2023</strong>: Early commercial issuances emerged, including corporate bonds with real-time coupon recording and fractional ownership features.</li>
 </ul>
 <h2>Present (2025 snapshot)</h2>
-<p>As of mid-2025, the global market size of tokenised debt is small relative to traditional bonds but shows consistent growth. Analyst estimates put outstanding issuance between USD 4 and 5 billion[^bis2024]. Most transactions involve private placements or structured notes, though the first few public issuances have appeared in Asia and Europe.</p>
+<p>As of mid-2025, the global market size of tokenised debt is small relative to traditional bonds but shows consistent growth. Analyst estimates put outstanding issuance between USD 4 and 5 billion<sup id="fnref:bis2024"><a class="footnote-ref" href="#fn:bis2024">3</a></sup>. Most transactions involve private placements or structured notes, though the first few public issuances have appeared in Asia and Europe.</p>
 <h3>Leading platforms</h3>
-<p>| Platform | Core technology | Notable activity |
-|----------|----------------|-----------------|
-| <strong>HSBC Orion</strong> | Permissioned ledger built on Hyperledger Fabric | Green bond issuance in Hong Kong, 2024[^hsbc2024] |
-| <strong>SBI Digital Asset Holdings</strong> | Tokenisation and custody infrastructure linked to Japanese broker networks | JGB pilot completed in 2025[^sbi2025] |
-| <strong>ASX Synfini</strong> | Australian DLT sandbox with on-chain settlement hooks | Corporate bond trials since 2023[^asx2023] |
-| <strong>SDX</strong> | Swiss exchange with integrated DLT platform | Euro-denominated corporate bonds traded in 2024 |</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Core technology</th>
+<th>Notable activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HSBC Orion</strong></td>
+<td>Permissioned ledger built on Hyperledger Fabric</td>
+<td>Green bond issuance in Hong Kong, 2024<sup id="fnref:hsbc2024"><a class="footnote-ref" href="#fn:hsbc2024">4</a></sup></td>
+</tr>
+<tr>
+<td><strong>SBI Digital Asset Holdings</strong></td>
+<td>Tokenisation and custody infrastructure linked to Japanese broker networks</td>
+<td>JGB pilot completed in 2025<sup id="fnref:sbi2025"><a class="footnote-ref" href="#fn:sbi2025">5</a></sup></td>
+</tr>
+<tr>
+<td><strong>ASX Synfini</strong></td>
+<td>Australian DLT sandbox with on-chain settlement hooks</td>
+<td>Corporate bond trials since 2023<sup id="fnref:asx2023"><a class="footnote-ref" href="#fn:asx2023">6</a></sup></td>
+</tr>
+<tr>
+<td><strong>SDX</strong></td>
+<td>Swiss exchange with integrated DLT platform</td>
+<td>Euro-denominated corporate bonds traded in 2024</td>
+</tr>
+</tbody>
+</table>
 <p>These platforms emphasise compliance with local securities laws and integrate with existing clearing mechanisms. Liquidity remains limited, with most trades occurring over-the-counter or through dedicated digital asset venues rather than traditional exchanges.</p>
 <h3>Market participants</h3>
 <p>Major financial institutions now operate dedicated tokenisation desks. Banks issue short-term notes for corporate clients, while asset managers experiment with tokenised fund units. Specialist fintech companies provide middleware for identity verification and compliance monitoring.</p>
@@ -60,7 +85,7 @@
 <h3>Tokenised cash integration</h3>
 <p>Stablecoins and wholesale central-bank digital currencies are being tested alongside tokenised bonds to enable atomic delivery-versus-payment. Several central banks in Asia and Europe now operate pilot networks that link tokenised securities to tokenised cash settlement accounts.</p>
 <h3>Regulatory environment</h3>
-<p>Regulators increasingly recognise tokenised securities within existing frameworks. In Europe, MiCA and the anticipated UK Digital Securities Sandbox provide pathways for larger-scale pilots. In APAC, Singapore's Project Guardian unites banks and asset managers to test interoperability and risk management standards[^guardian2024]. The Australian Securities and Investments Commission (ASIC) continues to refine licensing guidance, while Japan's Financial Services Agency supports sandbox testing under existing security-token regulations.</p>
+<p>Regulators increasingly recognise tokenised securities within existing frameworks. In Europe, MiCA and the anticipated UK Digital Securities Sandbox provide pathways for larger-scale pilots. In APAC, Singapore's Project Guardian unites banks and asset managers to test interoperability and risk management standards<sup id="fnref:guardian2024"><a class="footnote-ref" href="#fn:guardian2024">1</a></sup>. The Australian Securities and Investments Commission (ASIC) continues to refine licensing guidance, while Japan's Financial Services Agency supports sandbox testing under existing security-token regulations.</p>
 <h2>Future scenarios</h2>
 <p>To evaluate potential outcomes for bond tokenisation, it is useful to outline three distinct scenarios. All assume ongoing technological progress but differ in the pace of regulatory harmonisation and market adoption.</p>
 <h3>Scenario 1 – Optimistic</h3>
@@ -108,12 +133,29 @@
 <h2>Outlook</h2>
 <p>Bond tokenisation is unlikely to supplant conventional issuance overnight. However, the ability to automate settlement, streamline compliance and enhance transparency promises meaningful efficiency gains. The greatest barriers are currently regulatory coordination and the lack of deep secondary-market liquidity. Quants who incorporate on-chain data and adapt risk tools stand to benefit from early insights as the market evolves. Whether tokenised debt captures 5% or 20% of future issuance depends on ongoing collaboration between issuers, investors and regulators.</p>
 <h2>References</h2>
-<p>[^guardian2024]: MAS "Project Guardian" progress update, 2024.
-[^esma2025]: ESMA digital bond guidance, 2025.
-[^bis2024]: BIS Bulletin "Tokenisation and its implications", 2024.
-[^hsbc2024]: HSBC, tokenised green bond announcement, 2024.
-[^sbi2025]: SBI Digital Asset Holdings update, 2025.
-[^asx2023]: ASX Synfini trial release, 2023.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:guardian2024">
+<p>MAS "Project Guardian" progress update, 2024.&#160;<a class="footnote-backref" href="#fnref:guardian2024" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:esma2025">
+<p>ESMA digital bond guidance, 2025.&#160;<a class="footnote-backref" href="#fnref:esma2025" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:bis2024">
+<p>BIS Bulletin "Tokenisation and its implications", 2024.&#160;<a class="footnote-backref" href="#fnref:bis2024" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:hsbc2024">
+<p>HSBC, tokenised green bond announcement, 2024.&#160;<a class="footnote-backref" href="#fnref:hsbc2024" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:sbi2025">
+<p>SBI Digital Asset Holdings update, 2025.&#160;<a class="footnote-backref" href="#fnref:sbi2025" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:asx2023">
+<p>ASX Synfini trial release, 2023.&#160;<a class="footnote-backref" href="#fnref:asx2023" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
   </main>
 </body>
 </html>
